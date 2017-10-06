@@ -14,7 +14,20 @@ planet_list.insert(1, "Venus")
 rocky_planets = planet_list[0..3]
 planet_list.pop["Pluto"]
 
-puts planet_list
+# puts planet_list
 
 
-puts rocky_planets
+# puts rocky_planets
+
+
+crafts_and_planets = [["Viking", "Mars"], ["Galileo", "Jupiter"], ["Cassini", "Saturn"], ["Pioneer", "Venus"]]
+# puts crafts_and_planets
+
+for planet in planet_list 
+    # puts planet
+    for item in crafts_and_planets
+        # puts item
+        # puts "The spacecraft, #{item} has visited the planet, #{planet}."
+    end
+    puts planet
+end
