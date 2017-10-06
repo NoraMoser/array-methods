@@ -26,8 +26,11 @@ crafts_and_planets = [["Viking", "Mars"], ["Galileo", "Jupiter"], ["Cassini", "S
 for planet in planet_list 
     # puts planet
     for item in crafts_and_planets
+        if planet == item[1] then
+            puts "#{item[0]}, #{planet}"
+        end 
         # puts item
         # puts "The spacecraft, #{item} has visited the planet, #{planet}."
     end
-    puts planet
+    # puts planet
 end
